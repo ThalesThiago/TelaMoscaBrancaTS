@@ -1,0 +1,152 @@
+/* Estilos para a lista de Produtos e Serviços */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #4CAF50;
+  }
+  
+  .main-title, .header h2 {
+    text-align: center;  /* Alinhando todos os títulos ao centro */
+    color: #333;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .add-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .product-list, .service-list {
+    margin-top: 30px;
+  }
+  
+  .product-item, .service-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-item:hover, .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-item h3, .service-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .product-item p, .service-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .product-item strong, .service-item strong {
+    color: #333;
+  }
+  
+  .service-item {
+    background-color: #e8f4f8; /* Azul claro para os serviços */
+  }
+  
+  .product-item {
+    background-color: #eaf7e4; /* Verde claro para os produtos */
+  }
+  
+  .service-list p, .product-list p {
+    font-size: 1rem;
+    text-align: center;
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .form input, .add-button {
+      font-size: 1rem;
+    }
+  
+    .product-item, .service-item {
+      padding: 15px;
+    }
+  }
+
+  /* Animação da mosca voando */
+.fly-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .fly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    animation: flyAnimation 2s infinite;
+  }
+  
+  .rastro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: rastroAnimation 2s infinite;
+  }
+  
+  
+  
+  
